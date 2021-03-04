@@ -1,4 +1,4 @@
-#SumOfNumbers
+# SumOfNumbers
 
 Write a function that accepts an integer argument and returns the sum of all the integers from 1 up to the number passed as an argument. 
 
