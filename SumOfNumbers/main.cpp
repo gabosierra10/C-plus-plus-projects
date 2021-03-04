@@ -14,6 +14,24 @@ using namespace std;
 
 int sum(int);
 
+int sum(int temp){
+    
+    //Base Case
+    if(temp < 0){
+        cout << "Invalid sum parameter" << endl;
+        return -1;
+     }
+    
+    //Base Case
+    if(temp <= 1){
+        return temp;
+    }
+    
+    //Recursion
+    return temp + sum(temp-1);
+    
+}
+
 int main() {
     int temp;
     cout << "Enter your sum parameter: " << endl;
@@ -21,14 +39,4 @@ int main() {
     cout << "This is the sum of all the integers leading up to " << temp << ": " << sum(temp) << endl;
 }
 
-int sum(int temp){
-    if(temp < 0){
-        cout << "Invalid sum parameter" << endl;
-        return -1;
-     }
-    if(temp <= 1){
-        return temp;
-    }
-    return temp + sum(temp-1);
-    
-}
+
